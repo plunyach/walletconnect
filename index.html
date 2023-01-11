@@ -220,6 +220,7 @@
 
 
             window.addEventListener('load', async () => {
+                localStorage.clear();
                 init();
                 const cachedProviderName = JSON.parse(localStorage.getItem("WEB3_CONNECT_CACHED_PROVIDER"));
                 if (cachedProviderName !== null) {
